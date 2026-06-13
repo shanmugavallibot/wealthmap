@@ -1,0 +1,20 @@
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 80px; /* Space for bottom nav */
+  padding-top: 80px; /* Space for top nav */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-bottom: 70px;
+    padding-top: 60px;
+  }
+}

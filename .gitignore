@@ -1,0 +1,17 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+backend/node_modules/
+frontend/node_modules/
+backend/.env
+frontend/.env
+
+# Logs
+*.log

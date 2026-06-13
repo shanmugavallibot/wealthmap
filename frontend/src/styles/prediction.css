@@ -1,0 +1,178 @@
+.prediction-card {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+.prediction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.prediction-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.accuracy-badge {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.prediction-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.prediction-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.prediction-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid;
+}
+
+.prediction-item.income {
+  border-left-color: #4caf50;
+}
+
+.prediction-item.expense {
+  border-left-color: #ff6f00;
+}
+
+.prediction-item.savings {
+  border-left-color: #2196f3;
+}
+
+.prediction-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.prediction-details label {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.prediction-details .amount {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.trend.increasing {
+  color: #4caf50;
+}
+
+.trend.decreasing {
+  color: #ff6f00;
+}
+
+.confidence {
+  opacity: 0.7;
+}
+
+.prediction-analysis {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.prediction-analysis h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.analysis-item {
+  text-align: center;
+}
+
+.analysis-item label {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.analysis-item .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #81c784;
+}
+
+.prediction-tips {
+  background: rgba(76, 175, 80, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #4caf50;
+}
+
+.prediction-tips h3 {
+  margin: 0 0 1rem 0;
+  color: #81c784;
+}
+
+.prediction-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prediction-tips li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .prediction-card {
+    padding: 1.5rem;
+  }
+
+  .prediction-section {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
